@@ -16,14 +16,17 @@ dependencies:
     sdk: flutter
 
 
-  cupertino_icons: ^1.0.2
-  path_provider: ^2.0.11
+  cupertino_icons: any 
+  path_provider: any 
   path: ^1.8.1
   sqflite: ^2.0.3
   http: ^1.1.0
   get_it: ^7.2.0
   intl: any 
   injectable: ^2.3.0
+  draggable_home: any 
+  flutter_rating_bar: any
+
 
 dev_dependencies:
   flutter_test:

@@ -13,7 +13,7 @@ class SearchArea extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
       MainMessage(),
-      MoviesSearchBar(),
+      MoviesSearchBar(expanded:false),
         ],
       ),
     );

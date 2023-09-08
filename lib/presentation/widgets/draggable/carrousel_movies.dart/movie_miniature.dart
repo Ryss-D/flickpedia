@@ -11,8 +11,11 @@ class MovieMiniature extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      decoration:BoxDecoration(
+        color:Colors.red,
+    borderRadius: BorderRadius.all(Radius.circular(15))
+      ),
       //color:Theme.of(context).scaffoldBackgroundColor,
-      color:Colors.red,
               width: MediaQuery.of(context).size.width/3,
       padding: EdgeInsets.all(10),
       child: Column(

@@ -15,7 +15,7 @@ class MainDraggable extends StatelessWidget {
     return DraggableHome(
       headerWidget: const SearchArea(),
       expandedBody: const SearchArea(),
-  title: const MoviesSearchBar(),
+  title: const MoviesSearchBar(expanded: true,),
   body: [
     SizedBox(
       child: ListView.builder(

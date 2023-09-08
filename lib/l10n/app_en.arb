@@ -2,6 +2,11 @@
     "helloWorld": "Hello World!",
     "@helloWorld": {
       "description": "The conventional newborn programmer greeting"
-    }
-
+    },
+    "greetings": "Hello, what do you want to watch?",
+    "watchNow": "WATCH NOW",
+    "genres": "Genres",
+    "productionCompanies": "Production companies",
+    "release": "Release",
+    "search": "Search"
 }

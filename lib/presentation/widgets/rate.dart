@@ -9,9 +9,9 @@ class Rate extends StatelessWidget {
   Widget build(BuildContext context) {
     return RatingBar(
       ratingWidget: RatingWidget(
-          full: Icon(Icons.star),
-          half: Icon(Icons.star_half),
-          empty: Icon(Icons.star)),
+          full: const Icon(Icons.star),
+          half: const Icon(Icons.star_half),
+          empty: const Icon(Icons.star)),
       onRatingUpdate: (double value) {},
     );
   }

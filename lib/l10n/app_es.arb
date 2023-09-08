@@ -2,5 +2,11 @@
     "helloWorld": "Hola mundo!",
     "@helloWorld": {
       "description": "Una descriocion"
-    }
+    },
+    "greetings": "Hola, ¿Qué quieres ver?",
+    "watchNow": "VER AHORA",
+    "genres": "Generos",
+    "productionCompanies": "Compañias productoras",
+    "release": "Lanzamiento",
+    "search": "Buscar"
 }

@@ -14,19 +14,18 @@ class MainDraggable extends StatelessWidget {
       //created expanded constructor
   title: SearchArea(),
   body: [
-    ListView.builder(
-      padding: EdgeInsets.only(top: 0),
-      physics: NeverScrollableScrollPhysics(),
-      shrinkWrap: true,
-      itemCount: 2,
-      itemBuilder: (context, index) => Card(
-        child: ListTile(
-          title:CategoryCarrousel(), 
-        ),
-      ),
-    ),
+    // Container(
+    //   child: ListView.builder(
+    //     padding: EdgeInsets.only(top: 0),
+    //     physics: NeverScrollableScrollPhysics(),
+    //     shrinkWrap: true,
+    //     itemCount: 2,
+    //     itemBuilder: (context, index) => 
+    //         CategoryCarrousel(), 
+    //   ),
+    // ),
 
   ]
-);;
+);
   }
 }

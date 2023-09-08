@@ -26,6 +26,9 @@ dependencies:
   injectable: ^2.3.0
   draggable_home: any 
   flutter_rating_bar: any
+  flutter_bloc: any
+  equatable: any
+  flutter_dotenv: any
 
 
 dev_dependencies:
@@ -38,3 +41,6 @@ flutter:
 
   uses-material-design: true
   generate: true
+
+  assets:
+    - .env

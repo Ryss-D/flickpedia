@@ -1,13 +1,12 @@
+import 'package:flickpedia/data/models/movie.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-part 'navigation_state.dart';
+class NavigationCubit extends Cubit<Movie?> {
+  NavigationCubit() : super(null);
 
-class RateCubit extends Cubit<RateState> {
-  RateCubit() : super(DefaultRate());
-
-  void giveRate(int rate) {
+  void showMovieDetails(Movie movie) {
     emit(
-      PersonalRate(rate: rate),
-    );
+      movie);
   }
+  void popToCatalog() => emit(null);
 }

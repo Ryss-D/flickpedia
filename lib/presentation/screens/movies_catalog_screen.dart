@@ -8,6 +8,7 @@ class MoviesCatalogScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //inject result via bloc
     return Scaffold(body:MainDraggable(mainCategories:[]));
   }
 }

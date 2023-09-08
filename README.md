@@ -1,9 +1,9 @@
 # flickpedia
 
-The current project represents a quick sketch using a combination of bloc and clean architecture to structure de whole project.\
-The main state manager is BloC as well.\
-The main data source is the https://www.themoviedb.org/ API\
-The documentation was generated using built-in dartdoc funcionality (With the respective comments into the code)\
+The current project represents a quick sketch using a combination of bloc and clean architecture to structure de whole project. \
+The main state manager is BloC as well. \
+The main data source is the https://www.themoviedb.org/ API \
+The documentation was generated using built-in dartdoc funcionality (With the respective comments into the code). \
 Some remarcable libraries used during the development are: 
   - getIt => Dependency injection
   - flutter_bloc => Easier state managemente

@@ -1,3 +1,5 @@
+import 'package:flickpedia/presentation/widgets/draggable/search_area/main_message.dart';
+import 'package:flickpedia/presentation/widgets/draggable/search_area/movies_search_bar.dart';
 import 'package:flutter/material.dart';
 
 class SearchArea extends StatelessWidget {
@@ -5,6 +7,12 @@ class SearchArea extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Container(
+        child: Column(
+      children: [
+        MainMessage(),
+        MoviesSearchBar(),
+      ],
+    ));
   }
 }

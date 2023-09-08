@@ -1,18 +1,37 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class MovieDetails extends StatelessWidget {
-  const MovieDetails({super.key});
+  final String genres;
+  final String productionCompanies;
+  final String release;
+  const MovieDetails(
+      {super.key,
+      required this.genres,
+      required this.productionCompanies,
+      required this.release});
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      itemCount: 3,
-      itemBuilder: (context, index) => Row(
-        children: [
-          Text("text"),
-          Text("text"),
-        ],
-      ),
-    );
+    return Column(children: [
+      Row(children: [
+        Text(
+          AppLocalizations.of(context)!.genres,
+        ),
+        Text(genres)
+      ]),
+      Row(children: [
+        Text(
+          AppLocalizations.of(context)!.productionCompanies,
+        ),
+        Text(productionCompanies)
+      ]),
+      Row(children: [
+        Text(
+          AppLocalizations.of(context)!.release,
+        ),
+        Text(release)
+      ])
+    ]);
   }
 }

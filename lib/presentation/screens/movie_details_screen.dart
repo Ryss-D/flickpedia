@@ -5,8 +5,25 @@ import 'package:flickpedia/presentation/widgets/rate.dart';
 import 'package:flutter/material.dart';
 
 class MovieDetailsScreen extends StatelessWidget {
-  const MovieDetailsScreen({super.key});
- static const routeName = '/movie-details';
+  final String title;
+  final String coverUrl;
+  final String description;
+  final String genres;
+  final String productionCompanies;
+  final String release;
+  final int movieId;
+  final double rate;
+  const MovieDetailsScreen(
+      {super.key,
+      required this.title,
+      required this.coverUrl,
+      required this.description,
+      required this.movieId,
+
+      required this.genres,
+      required this.productionCompanies,
+      required this.release, required this.rate});
+  static const routeName = '/movie-details';
 
   @override
   Widget build(BuildContext context) {
@@ -15,19 +32,23 @@ class MovieDetailsScreen extends StatelessWidget {
         child: Column(
           children: [
             Hero(
-              tag: "movie",
+              tag: movieId,
               child: Image(
-                image: NetworkImage("dsda"),
+                image: NetworkImage(coverUrl),
               ),
             ),
-            Text("title"),
-            Row(children: [WatchNowButton(), Rate()]),
-            Text("description"),
+            Text(title),
+            Row(children: [const WatchNowButton(), Rate(rate:rate)]),
+            Text(description),
             ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: 5,
-                itemBuilder: (context, index) => ActorDetails()),
-            MovieDetails()
+                itemBuilder: (context, index) => const ActorDetails()),
+            MovieDetails(
+              genres: genres,
+              productionCompanies: productionCompanies,
+              release: release,
+            ),
           ],
         ),
       ),

@@ -42,7 +42,6 @@ class MyApp extends StatelessWidget {
       initialRoute: MoviesCatalogScreen.routeName,
   routes: {
     MoviesCatalogScreen.routeName: (context) => const MoviesCatalogScreen(),
-          MovieDetailsScreen.routeName: (context) => const MovieDetailsScreen(),
   }
     );
         }

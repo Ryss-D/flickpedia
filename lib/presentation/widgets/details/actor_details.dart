@@ -1,3 +1,4 @@
+import 'package:flickpedia/data/constants.dart';
 import 'package:flutter/material.dart';
 
 class ActorDetails extends StatelessWidget {
@@ -6,10 +7,10 @@ class ActorDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        child: Column(
+        child:const  Column(
       children: [
-        Image(image:NetworkImage("thtecom")),
-        Text("Text"),
+        Image(image:NetworkImage(Constants.ditoImage)),
+        Text( Constants.dito),
       ],
     ));
   }

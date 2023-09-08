@@ -8,6 +8,6 @@ class MoviesCatalogScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body:MainDraggable());
+    return Scaffold(body:MainDraggable(mainCategories:[]));
   }
 }

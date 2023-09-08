@@ -17,7 +17,7 @@ class MainDraggable extends StatelessWidget {
       expandedBody: const SearchArea(),
   title: const MoviesSearchBar(),
   body: [
-    Container(
+    SizedBox(
       child: ListView.builder(
         padding: const EdgeInsets.only(top: 0),
         physics: const NeverScrollableScrollPhysics(),

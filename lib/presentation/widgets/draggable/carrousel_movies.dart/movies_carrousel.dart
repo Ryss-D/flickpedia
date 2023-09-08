@@ -8,17 +8,24 @@ class MoviesCarrousel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-        scrollDirection: Axis.horizontal,
-        itemCount: movieList.length,
-        itemBuilder: (context, index) {
-          Movie movie = movieList[index];
-          return MovieMiniature(
-            title: movie.title,
-            coverUrl: movie.coverUrl,
-            rate: movie.rate,
-            movieId: movie.movieId,
-          );
-        });
+    return Container(
+      height: 150,
+      width: 300,
+      child: ListView.builder(
+          scrollDirection: Axis.horizontal,
+          itemCount: movieList.length,
+          itemBuilder: (context, index) {
+            Movie movie = movieList[index];
+            return Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: MovieMiniature(
+                title: movie.title,
+                coverUrl: movie.coverUrl,
+                rate: movie.rate,
+                movieId: movie.movieId,
+              ),
+            );
+          }),
+    );
   }
 }

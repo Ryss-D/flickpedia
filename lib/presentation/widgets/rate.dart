@@ -8,14 +8,20 @@ class Rate extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RatingBar(
-      maxRating: 5.0,
-      initialRating: rate,
-      ratingWidget: RatingWidget(
-          full: const Icon(Icons.star),
-          half: const Icon(Icons.star_half),
-          empty: const Icon(Icons.star)),
-      onRatingUpdate: (double value) {},
+    return Container(
+      child: FittedBox(
+        fit: BoxFit.cover,
+        child: RatingBar(
+          allowHalfRating: true,
+          maxRating: 5.0,
+          initialRating: rate,
+          ratingWidget: RatingWidget(
+              full: const Icon(Icons.star),
+              half: const Icon(Icons.star_half),
+              empty: const Icon(Icons.star)),
+          onRatingUpdate: (double value) {},
+        ),
+      ),
     );
   }
 }

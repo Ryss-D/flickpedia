@@ -8,11 +8,14 @@ class SearchArea extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        child: Column(
-      children: [
-        MainMessage(),
-        MoviesSearchBar(),
-      ],
-    ));
+      color: Theme.of(context).primaryColor,
+      child: const Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+      MainMessage(),
+      MoviesSearchBar(),
+        ],
+      ),
+    );
   }
 }

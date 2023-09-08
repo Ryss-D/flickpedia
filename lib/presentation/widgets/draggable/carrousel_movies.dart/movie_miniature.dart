@@ -11,12 +11,23 @@ class MovieMiniature extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      //color:Theme.of(context).scaffoldBackgroundColor,
+      color:Colors.red,
+              width: MediaQuery.of(context).size.width/3,
+      padding: EdgeInsets.all(10),
       child: Column(
         children: [
           Hero(
             tag: movieId,
-            child: Image(
-              image: NetworkImage(coverUrl),
+            child: Container(
+              height: 50,
+              width: 50,
+              child: FittedBox(
+                fit: BoxFit.cover,
+                child: Image(
+                  image: NetworkImage(coverUrl),
+                ),
+              ),
             ),
           ),
           Text(title),
